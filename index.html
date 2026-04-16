@@ -1,229 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arjun Portfolio</title>
+    <title>Arjun Kumar Portfolio</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+        }
 
-body{background:#0f172a;color:white;}
+        header {
+            text-align: center;
+            padding: 50px;
+            background: #1e293b;
+        }
 
-/* Navbar */
-nav{
-  background:black;
-  padding:15px;
-  text-align:center;
-}
-nav a{
-  color:white;
-  margin:10px;
-  text-decoration:none;
-}
+        header h1 {
+            margin: 0;
+        }
 
-/* Hero */
-.hero{
-  text-align:center;
-  padding:60px;
-}
+        nav {
+            text-align: center;
+            background: #334155;
+            padding: 12px;
+        }
 
-/* Section */
-section{
-  padding:40px 20px;
-}
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* Timeline */
-.timeline{
-  position:relative;
-}
-.timeline::before{
-  content:"";
-  position:absolute;
-  left:20px;
-  width:4px;
-  height:100%;
-  background:#6366f1;
-}
+        section {
+            padding: 25px;
+        }
 
-.timeline-item{
-  margin-left:60px;
-  margin-bottom:30px;
-  position:relative;
-}
-.timeline-item::before{
-  content:"";
-  position:absolute;
-  left:-38px;
-  top:10px;
-  width:20px;
-  height:20px;
-  background:orange;
-  border-radius:50%;
-}
+        .card {
+            background: #1e293b;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
 
-.card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 0 10px black;
-}
+        .card:hover {
+            transform: translateY(-5px);
+        }
 
-.date{
-  background:white;
-  color:black;
-  padding:5px 10px;
-  border-radius:20px;
-  font-size:12px;
-}
+        #education .card {
+            border-left: 5px solid #38bdf8;
+        }
 
-/* Skills */
-.skill-box{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-.skill-card{
-  background:white;
-  color:black;
-  padding:30px;
-  border-radius:10px;
-  text-align:center;
-  font-weight:bold;
-}
-
-/* Contact */
-input,textarea{
-  width:100%;
-  padding:10px;
-  margin:10px 0;
-}
-
-button{
-  background:cyan;
-  border:none;
-  padding:10px;
-  cursor:pointer;
-}
-
-/* Footer */
-footer{
-  background:black;
-  text-align:center;
-  padding:10px;
-}
-</style>
+        h2 {
+            border-bottom: 2px solid #38bdf8;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
+    <h1>Arjun Kumar</h1>
+    <p>MCA Graduate | SAP S/4HANA (SAP PM) | Web Developer</p>
+</header>
+
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero" id="home">
-  <h1>Arjun Kumar</h1>
-  <p>SAP S/4 HANA | Web Developer</p>
-</section>
-
 <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am working at Munjal Showa (Hero Group) on SAP S/4 HANA (SAP PM) since Oct 2025.
-    I am also learning web development and building projects.
-  </p>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am Arjun Kumar, an MCA graduate currently working at Munjal Showa (Hero Group). I am working on SAP S/4HANA in SAP PM module and also learning web development.</p>
+    </div>
 </section>
 
 <section id="experience">
-  <h2>Work Experience</h2>
+    <div class="card">
+        <h2>Work Experience</h2>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="card">
-        <span class="date">Oct 2025 - Present</span>
         <h3>Munjal Showa (Hero Group)</h3>
-        <p>SAP S/4 HANA (SAP PM)</p>
-      </div>
+        <p><b>Location:</b> Haridwar</p>
+        <p><b>Role:</b> SAP PM (SAP S/4HANA)</p>
+        <p>Currently working on SAP S/4HANA system, handling maintenance planning, notifications, and work order management.</p>
+
     </div>
-  </div>
 </section>
 
 <section id="education">
-  <h2>Education</h2>
+    <h2>Education</h2>
 
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="card">
-        <span class="date">MCA</span>
-        <p>Master of Computer Applications (2025)</p>
-      </div>
+    <div class="card">
+        <h3>MCA (Master of Computer Applications)</h3>
+        <p>Completed: 2025</p>
     </div>
 
-    <div class="timeline-item">
-      <div class="card">
-        <span class="date">BCA</span>
-        <p>Bachelor of Computer Applications (2023)</p>
-      </div>
+    <div class="card">
+        <h3>BCA (Bachelor of Computer Applications)</h3>
+        <p>Completed: 2023</p>
     </div>
 
-    <div class="timeline-item">
-      <div class="card">
-        <span class="date">12th</span>
-        <p>Higher Secondary (2020)</p>
-      </div>
+    <div class="card">
+        <h3>12th (Intermediate)</h3>
+        <p>Completed: 2020</p>
     </div>
 
-    <div class="timeline-item">
-      <div class="card">
-        <span class="date">10th</span>
-        <p>Secondary School (2018)</p>
-      </div>
+    <div class="card">
+        <h3>10th (High School)</h3>
+        <p>Completed: 2018</p>
     </div>
 
-  </div>
 </section>
 
 <section id="skills">
-  <h2>My Skills</h2>
-
-  <div class="skill-box">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">SAP(PM)/S4 HANA</div>
-    <div class="skill-card">C</div>
-    <div class="skill-card">Excel</div>
-    <div class="skill-card">Python</div>
-    <div class="skill-card">SQL</div>
-
-  </div>
+    <div class="card">
+        <h2>Skills</h2>
+        <p>✔ HTML</p>
+        <p>✔ CSS</p>
+        <p>✔ JavaScript (Learning)</p>
+        <p>✔ SAP S/4HANA (SAP PM)</p>
+    </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Me</h2>
-
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="Your Email">
-  <textarea placeholder="Your Message"></textarea>
-
-  <button onclick="sendMsg()">Send</button>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>Phone: 1234567890</p>
+    </div>
 </section>
-
-<footer>
-  <p>© 2026 Arjun Kumar</p>
-</footer>
-
-<script>
-function sendMsg(){
-  alert("Message Sent Successfully!");
-}
-</script>
 
 </body>
 </html>
